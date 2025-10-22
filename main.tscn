@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://15dthjgubbrs"]
+[gd_scene load_steps=2 format=3 uid="uid://15dthjgubbrs"]
+
+[ext_resource type="Script" uid="uid://bngedodpro6yx" path="res://celestial_bodies.gd" id="1_ig7tw"]
 
 [node name="Node3D" type="Node3D"]
+
+[node name="CelestialBodies" type="Node" parent="."]
+script = ExtResource("1_ig7tw")
