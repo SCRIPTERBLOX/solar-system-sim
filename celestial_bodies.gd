@@ -16,6 +16,13 @@ func add_planet(size: Vector3, pos: Vector3, mass: float, color: Color):
 	add_child(new_planet)
 
 
+func planet_attraction(mass1: float, pos1: Vector3, mass2: float, pos2: Vector3):
+	var dist = pos1 - pos2
+	var mass_diff = mass1 - mass2
+	
+	return mass_diff / dist
+
+
 func _process(delta: float) -> void:
 	# Apply velocities to all planets
 	pass
