@@ -2,7 +2,7 @@ extends Node
 
 
 func add_planet(size, pos, mass, color):
-	pass
+	print("Adding planet")
 
 
 func _process(delta: float) -> void:
